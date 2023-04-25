@@ -21,7 +21,7 @@
         dest: /var/www/html/
     - name: Install required packages
       become: true
-      yum:
+      dnf:
         name:
           - yum-utils
           - device-mapper-persistent-data
@@ -34,7 +34,7 @@
 
     - name: Install Docker
       become: true
-      yum:
+      dnf:
         name: docker-ce
         state: latest
 
