@@ -21,11 +21,21 @@
         dest: /var/www/html/
     - name: Install required packages
       become: true
-      dnf:
+      yum:
         name:
-          - dnf-plugins-core
-          - container-selinux
-          - docker-ce
+          - yum-utils
+          - device-mapper-persistent-data
+          - lvm2
+        state: latest
+
+    - name: Add Docker repository
+      become: true
+      shell: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+    - name: Install Docker
+      become: true
+      yum:
+        name: docker-ce
         state: latest
 
     - name: Start Docker service
@@ -34,6 +44,5 @@
         name: docker
         enabled: yes
         state: started
-
 
 ...
