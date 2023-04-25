@@ -28,14 +28,10 @@
           - lvm2
         state: latest
 
-    - name: Add Docker repository
-      become: true
-      shell: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-
     - name: Install Docker
       become: true
       dnf:
-        name: docker-ce
+        name: docker.x86_64
         state: latest
 
     - name: Start Docker service
