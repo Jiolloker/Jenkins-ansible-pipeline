@@ -19,4 +19,21 @@
       copy:
         src: index.html
         dest: /var/www/html/
+    - name: Install required packages
+      become: true
+      dnf:
+        name:
+          - dnf-plugins-core
+          - container-selinux
+          - docker-ce
+        state: latest
+
+    - name: Start Docker service
+      become: true
+      systemd:
+        name: docker
+        enabled: yes
+        state: started
+
+
 ...
