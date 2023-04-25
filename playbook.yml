@@ -2,6 +2,10 @@
 - hosts: linux 
   become: True
   tasks:
+    - name: Update all packages
+      yum:
+        name: "*"
+        state: "latest"
     - name: Install packages
       yum:
         name: "httpd"
