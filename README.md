@@ -107,3 +107,9 @@ Running a playbook
 ansible-playbook playbook.yml
 ```
 ![Alt text](https://github.com/Jiolloker/Jenkins-ansible-pipeline/blob/ansible-dynamic-inventory/img/playbook.png)
+
+
+
+
+Resource used
+[link](https://devopscube.com/setup-ansible-aws-dynamic-inventory/)
