@@ -29,7 +29,7 @@ Lastly, for testing purposes.
 ssh_args = -o StrictHostKeyChecking=no
 ```
 
-Also, the structure of you aws credentials yaml should look like this.
+Also, the structure of you aws credentials yaml should look like this. The aws_ec2.yaml file storage location is left to your own discretion.
 ```
 ---
 plugin: aws_ec2
