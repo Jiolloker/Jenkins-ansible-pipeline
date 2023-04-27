@@ -71,10 +71,11 @@ ansible-inventory -i /opt/ansible/inventory/aws_ec2.yaml --list
 ```
 ansible all -m ping
 ```
-
+![Alt text](https://github.com/Jiolloker/Jenkins-ansible-pipeline/blob/ansible-dynamic-inventory/img/ping.png)
 ```
 ansible-inventory --graph
 ```
+![Alt text](https://github.com/Jiolloker/Jenkins-ansible-pipeline/blob/ansible-dynamic-inventory/img/graph.png)
 
 You can also point to a especific machine to run ansible commands
 ```
@@ -105,3 +106,4 @@ Running a playbook
 ```
 ansible-playbook playbook.yml
 ```
+![Alt text](https://github.com/Jiolloker/Jenkins-ansible-pipeline/blob/ansible-dynamic-inventory/img/playbook.png)
