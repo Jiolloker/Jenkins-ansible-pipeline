@@ -7,7 +7,7 @@ Manage credentials of a github and ssh key credentials
 Install ansible pluggin and configure ansible on global tool config.
 ```
 
-# Ansible dinamyc inventory test on AWS
+# Ansible dynamic inventory test on AWS
 Enable plugin in the ansible.cfg.
 ```
 [inventory]
