@@ -1,5 +1,5 @@
 ---
-- hosts: linux 
+- hosts: aws_region_us_east_1 
   become: True
   tasks:
     - name: Update all packages
